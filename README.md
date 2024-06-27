@@ -126,6 +126,8 @@ frida -U -n Wechat -l wechatdbpass.js
 
 如果你换过手机并迁移数据，这个 imei 可能早就就变了，并不是当前手机IMEI。
 
+当微信获取不到本机IMEI会默认采用“1234567890ABCDEF”来计算密码。
+
 ```python
 import hashlib
 
